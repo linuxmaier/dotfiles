@@ -4,6 +4,8 @@ filetype plugin indent on
 syntax on
 colorscheme blazer
 
+set pastetoggle=<F2>
+
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 0
@@ -13,3 +15,7 @@ let g:syntastic_eruby_ruby_quiet_messages = {'regex': 'possibly useless use of a
 let g:loaded_syntastic_xml_xmllint_checker = 1
 
 set tabstop=4 expandtab shiftwidth=4 smarttab
+
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
