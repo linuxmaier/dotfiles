@@ -25,3 +25,6 @@ set statusline+=%*
 "number lines setting
 set relativenumber
 set number
+
+"shows parens match
+set showmatch
